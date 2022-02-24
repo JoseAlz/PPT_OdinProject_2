@@ -87,9 +87,9 @@ function game(playerSelect) {
 
   let roundResult = playRound(playerSelection, computerSelection);
 
-  if (roundResult.search("You Win!") > -1) {
+  if (roundResult.search("Ganaste!") > -1) {
     playerScore++;
-  } else if (roundResult.search("You Lose!") > -1) {
+  } else if (roundResult.search("Perdiste!") > -1) {
     computerScore++;
   }
 
@@ -100,9 +100,9 @@ function game(playerSelect) {
   selectionComputer.appendChild(createParagWithText(computerSelection));
 
   if (playerScore >= 5 && computerScore < 5) {
-    message.textContent = "Game Over. You Win!";
+    message.textContent = "Game Over. Ganaste!";
   } else if (playerScore < 5 && computerScore >= 5) {
-    message.textContent = "Game Over. You Lose!";
+    message.textContent = "Game Over. Perdiste!";
   }
 }
 
