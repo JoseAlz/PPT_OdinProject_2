@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin project 2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1 class="heading">Piedra, Papel, Tijera</h1>
+    <div class="container">
+      <div class="score">
+        <div class="player-score">0</div>
+        <div style="margin: 0px 50px">-</div>
+        <div class="computer-score">0</div>
+      </div>
+      <div class="message"></div>
+      <div class="d-flex">
+        <div class="card">
+          <div class="card-image" data-image="Piedra">
+            <img src="img/Piedra.png" alt="Piedra" class="imagen" />
+          </div>
+          <div class="card-text">Piedra</div>
+        </div>
+        <div class="card">
+          <div class="card-image" data-image="Papel">
+            <img src="img/Papel.png" alt="Papel" class="imagen" />
+          </div>
+          <div class="card-text">Papel</div>
+        </div>
+        <div class="card">
+          <div class="card-image" data-image="Tijera">
+            <img src="img/Tijera.png" alt="Tijera" class="imagen" />
+          </div>
+          <div class="card-text">Tijera</div>
+        </div>
+      </div>
+      <div class="dashboard">
+        <i class="fas fa-user-astronaut fa-3x"></i>
+        <div class="dashboard-side">
+          <h2 class="headindg-sub">Player</h2>
+          <div class="player-selection"></div>
+        </div>
+        <div class="dashboard-side">
+          <h2 class="headindg-sub">Machine</h2>
+          <div class="computer-selection"></div>
+        </div>
+        <i class="fas fa-robot fa-3x"></i>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
